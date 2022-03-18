@@ -57,10 +57,6 @@ export default function AtividadeForm(props) {
 
 
 
-   // Math.max.apply(
-    //  Math,
-    //  props.atividades.map(item => item.id)
-   // ) + 1
 
 
     return (
