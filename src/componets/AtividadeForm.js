@@ -2,7 +2,14 @@ import {useState, useEffect} from 'react';
 
 const atividadeInicial = {
   id: 0,
-  titulo: '',
+  cadastro: '',
+  logradouro: '',
+  numero_logradouro: '',
+  cep:'',
+  complemento_logradouro:'',
+  telefone:'',
+  email:'',
+  nome:'',
   prioridade: 0,
   descricao: '',
 
@@ -61,19 +68,109 @@ export default function AtividadeForm(props) {
 
     return (
       <>
-        <h1> Atividade {atividade.id !== 0 ? atividade.id : ''} </h1>
+
+        <h1>CRUD Fornecedor</h1>
+        <hr></hr>
+        <h3> Cadastro {atividade.id !== 0 ? atividade.id : ''} </h3>
         <form className="row g-3" onSubmit={handleSubmit}>
         <div className="col-md-6">
-          <label className="form-label">Titulo</label>
+          <label className="form-label">Cadastro</label>
           <input
-          name='titulo'
-          value={atividade.titulo}
+          name='cadastro'
+          value={atividade.cadastro}
           onChange={inputTextHandler}
-          id='titulo'
+          id='cadastro'
           type='text'
           className="form-control"
            />
         </div>
+
+        <div className="col-md-6">
+          <label className="form-label">Logradouro</label>
+          <input
+          name='logradouro'
+          value={atividade.logradouro}
+          onChange={inputTextHandler}
+          id='logradouro'
+          type='text'
+          className="form-control"
+           />
+        </div>
+
+        <div className="col-md-6">
+          <label className="form-label">Numero Logradouro</label>
+          <input
+          name='numero_logradouro'
+          value={atividade.numero_logradouro}
+          onChange={inputTextHandler}
+          id='numero_logradouro'
+          type='text'
+          className="form-control"
+           />
+        </div>
+
+        <div className="col-md-6">
+          <label className="form-label">CEP</label>
+          <input
+          name='cep'
+          value={atividade.cep}
+          onChange={inputTextHandler}
+          id='cep'
+          type='text'
+          className="form-control"
+           />
+        </div>
+
+        <div className="col-md-6">
+          <label className="form-label">Complemento Logradouro</label>
+          <input
+          name='complemento_logradouro'
+          value={atividade.complemento_logradouro}
+          onChange={inputTextHandler}
+          id='complementou_logradouro'
+          type='text'
+          className="form-control"
+           />
+        </div>
+
+        <div className="col-md-6">
+          <label className="form-label">Telefone</label>
+          <input
+          name='telefone'
+          value={atividade.telefone}
+          onChange={inputTextHandler}
+          id='telefone'
+          type='text'
+          className="form-control"
+           />
+        </div>
+
+        <div className="col-md-6">
+          <label className="form-label">E-Mail</label>
+          <input
+          name='email'
+          value={atividade.email}
+          onChange={inputTextHandler}
+          id='email'
+          type='text'
+          className="form-control"
+           />
+        </div>
+
+        <div className="col-md-6">
+          <label className="form-label">Nome</label>
+          <input
+          name='nome'
+          value={atividade.nome}
+          onChange={inputTextHandler}
+          id='nome'
+          type='text'
+          className="form-control"
+           />
+        </div>
+
+
+        
 
         <div className="col-md-6">
           <label className="form-label">Prioridade</label>

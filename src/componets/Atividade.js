@@ -37,7 +37,7 @@ export default function Atividade(props) {
             <span className="badge bg-secondary me-1">
                 {props.ativ.id}
             </span>
-            - {props.ativ.titulo}
+            - {props.ativ.cadastro}
             </h5>
             <h6>
             Prioridade:
@@ -48,7 +48,15 @@ export default function Atividade(props) {
 
             </h6>
         </div>
-        <p className="card-text">{props.ativ.descricao}</p>
+        <p className="card-text">Descrição: {props.ativ.descricao}</p>
+        <p className="card-text">Logradouro: {props.ativ.logradouro}</p>
+        <p className="card-text">Número do Logradouro: {props.ativ.numero_logradouro}</p>
+        <p className="card-text">CEP: {props.ativ.cep}</p>
+        <p className="card-text">Complemento do Logradouro: {props.ativ.complemento_logradouro}</p>
+        <p className="card-text">Telefone: {props.ativ.telefone}</p>
+        <p className="card-text">E-Mail: {props.ativ.email}</p>
+        <p className="card-text">Nome: {props.ativ.nome}</p>
+
         <div className="d-flex justify-content-end pt-2 m-0 border-top">
             <button
              className="btn btn-sm btn-outline-primary me-2"

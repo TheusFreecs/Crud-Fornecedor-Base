@@ -8,7 +8,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 ReactDOM.render(
   <React.StrictMode>
     <div className="container">
-    <h1>Crud Fornecedor</h1>
       <App />
     </div>
   </React.StrictMode>,
